@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Signup</title>
+    <!-- Add Spotify favicon -->
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  
+
+<body class="bg-black text-white flex items-center justify-center min-h-screen">
+  <div class="w-96 p-6 text-center">
+    <!-- Spotify Logo -->
+    <div class="flex justify-center mb-6">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify Logo" class="h-12">
+    </div>
+
+    <!-- Signup Heading -->
+    <h1 class="text-4xl font-bold mb-6">Sign up to <br>start listening</h1>
+
+    <!-- Email Input -->
+    <form class="space-y-4">
+        <div class="text-white text-sm text-left">
+            <a href="#" class="font-bold">Email adress</a>
+          </div>
+      <div>
+        <input 
+        type="email" placeholder="name@domain.com" class="w-full p-3 text-white bg-transparent border border-gray-400 rounded-sm focus:outline-none focus:ring-2 focus:ring-green-500 placeholder-gray-500" required/>      
+      </div>
+      <div class="text-green-500 text-sm text-left">
+        <a href="#" class="underline">Use phone number instead.</a>
+      </div>
+      <button class="w-full bg-green-500 hover:bg-green-600 text-black font-bold py-3 rounded-full" type="submit">Next</button>
+    </form>
+
+    <!-- Divider -->
+    <div class="flex items-center my-6">
+      <div class="w-full h-px bg-gray-600"></div>
+      <span class="px-4 text-gray-400">or</span>
+      <div class="w-full h-px bg-gray-600"></div>
+    </div>
+
+    <!-- Signup with Social Media -->
+    <div class="space-y-4">
+        <!-- Google Button -->
+        <button class="w-full flex items-center border border-gray-400 text-white font-semibold py-3 rounded-full hover:border-green-500">
+          <div class="flex items-center justify-center w-10">
+            <img src="https://cdn.iconscout.com/icon/free/png-512/free-google-logo-icon-download-in-svg-png-gif-file-formats--brands-pack-logos-icons-189824.png?f=webp&w=256" alt="Google Logo" class="h-5">
+          </div>
+          <span class="flex-1 text-center">Sign up with Google</span>
+        </button>
+      
+        <!-- Facebook Button -->
+        <button class="w-full flex items-center border border-gray-400 text-white font-semibold py-3 rounded-full hover:border-green-500">
+          <div class="flex items-center justify-center w-10">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook Logo" class="h-5">
+          </div>
+          <span class="flex-1 text-center">Sign up with Facebook</span>
+        </button>
+      
+        <!-- Apple Button -->
+        <button class="w-full flex items-center border border-gray-400 text-white font-semibold py-3 rounded-full hover:border-green-500">
+            <div class="flex items-center justify-center w-10">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Apple_logo_white.svg/758px-Apple_logo_white.svg.png?20220821122232" alt="Facebook Logo" class="h-5">
+            </div>
+            <span class="flex-1 text-center">Sign up with Apple</span>
+          </button>
+      </div>
+           
+  </div>
+</body>
+</html>

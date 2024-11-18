@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Login</title>
+    <!-- Add Spotify favicon -->
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black text-white min-h-screen flex items-center justify-center flex-col">
+    <div class="w-full max-w-md bg-gray-900 p-8 rounded-md shadow-lg">
+      <div class="text-center mb-6">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify Logo" class="w-10 mx-auto">
+      </div>
+      
+      <h1 class="text-2xl font-bold text-center mb-6">Log in to Spotify</h1>
+      
+      <div class="space-y-4">
+        <!-- Google Button -->
+        <button class="w-full flex items-center border border-gray-400 text-white font-semibold py-3 rounded-full hover:border-green-500">
+          <div class="flex items-center justify-center w-10">
+            <img src="https://cdn.iconscout.com/icon/free/png-512/free-google-logo-icon-download-in-svg-png-gif-file-formats--brands-pack-logos-icons-189824.png?f=webp&w=256" alt="Google Icon" class="h-5">
+          </div>
+          <span class="flex-1 text-center">Continue with Google</span>
+        </button>
+      
+        <!-- Facebook Button -->
+        <button class="w-full flex items-center border border-gray-400 text-white font-semibold py-3 rounded-full hover:border-green-500">
+          <div class="flex items-center justify-center w-10">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook Icon" class="h-5">
+          </div>
+          <span class="flex-1 text-center">Continue with Facebook</span>
+        </button>
+      
+        <!-- Apple Button -->
+        <button class="w-full flex items-center border border-gray-400 text-white font-semibold py-3 rounded-full hover:border-green-500">
+          <div class="flex items-center justify-center w-10">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Apple_logo_white.svg/758px-Apple_logo_white.svg.png?20220821122232" alt="Apple Icon" class="h-5">
+          </div>
+          <span class="flex-1 text-center">Continue with Apple</span>
+        </button>
+      
+        <!-- Phone Number Button -->
+        <button class="w-full flex items-center border border-gray-400 text-white font-semibold py-3 rounded-full hover:border-green-500">
+          <span class="flex-1 text-center">Continue with phone number</span>
+        </button>
+      </div>
+    
+      <div class="my-6 border-t border-gray-700"></div>
+    
+      <form class="space-y-4">
+        <div>
+          <label for="email" class="block text-sm font-medium mb-1">Email or username</label>
+          <input type="email" id="email" name="email" class="w-full px-4 py-2 bg-white-800 text-black rounded-md focus:ring-2 focus:ring-green-500 focus:outline-none">
+        </div>
+        <div>
+          <label for="password" class="block text-sm font-medium mb-1">Password</label>
+          <div class="relative">
+            <input type="password" id="password" name="password" class="w-full px-4 py-2 bg-white-800 text-black rounded-md focus:ring-2 focus:ring-green-500 focus:outline-none">
+            <!-- Eye Icon for visibility toggle -->
+            <button type="button" class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white">
+              <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/eye-blocked-9878673-8020467.png?f=webp&w=256" alt="eye icon" class="h-5 w-5">
+            </button>
+          </div>
+        </div>
+
+        <button type="submit" class="w-full py-2 px-4 bg-green-500 text-black rounded-full font-bold hover:bg-green-600">
+          Log In
+        </button>
+      </form>
+
+      <div class="text-center mt-6">
+        <a href="#" class="text-sm text-white font-bold underline">Forgot your password?</a>
+      </div>
+      <div class="text-center text-sm">
+        <span class="text-gray-500">Don't have an account?</span>
+        <a href="#" class="text-white hover:underline">Sign up for Spotify</a>
+      </div>
+    </div>
+    
+    <!-- Footer outside the card -->
+    <footer class="mt-6 text-center text-xs text-gray-400 flex justify-center items-center space-x-1 w-full">
+      This site is protected by reCAPTCHA and the Google 
+      <a href="#" class="text-green-500 hover:underline">Privacy Policy</a> 
+      and 
+      <a href="#" class="text-green-500 hover:underline">Terms of Service </a> 
+      apply.
+    </footer>
+  </body>
+</html>
